@@ -5,19 +5,12 @@ import java.util.List;
 import model.entities.Department;
 import model.entities.Seller;
 
-public class SellerDao {
+public interface SellerDao {
 	
-	void insert(Seller obj) {
-	}
-	void update(Seller obj) {
-	}
-	void deleteById(Seller id) {
-	}
-	Seller findById(Integer id) {
-		return null;
-	}
-	List<Seller> findAll() {
-		return null;
-	}
+	void insert(Seller obj);
+	void update(Seller obj);
+	void deleteById(Seller id);
+	Seller findById(Integer id);
+	List<Seller> findAll();
 
 }
